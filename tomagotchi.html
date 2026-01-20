@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="tomagotchistyle.css">
+    <script src="tomagotchi.js" type="text/javascript"></script>
+    <audio id="background-music" src="02. Title Theme.mp3" loop autoplay></audio>
+    
+
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul id="myLinks">
+                <li><a href="periode2.html">Home</a></li>
+                <li><a href="periode1.html">Periode 1</a></li>
+                <li><a href="periode2.html">Periode 2</a></li>
+                <li><a href="tomagotchi.html">Tamagotchi</a></li>
+            </ul>
+            <button id="darkModeToggle" onclick="toggleDarkMode()">🌙</button> 
+        </nav>
+    </div>
+
+    <div class="tomagotchi">
+        <h1>TAMAGOTCHI</h1>
+        <p id="msg">Hallo</p>
+
+        <div class="emojis">
+            <p id="pet">🥚</p>
+            <p>Honger: <span id="h">100</span></p>
+            <p>Blij: <span id="b">100</span></p>
+            <p>Energie: <span id="e">100</span></p>
+            <p>Geld: <span id="g">100</span></p>
+            
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="eten()">🍕 Eten</button>
+        <button onclick="speel()">⚽Speel</button>
+        <button onclick="slaap()">🛏️ Slaap</button>
+        <button onclick="werk()">💼 Werk</button>
+        <button onclick="reset()">🔄 Reset</button>
+        <button ondblclick="dood()">❌NIET DRUKKEN❌</button>
+    </div>
+
+
+
+    <div id="cookieConsent">
+        Deze website gebruikt cookies om de gebruikerservaring te verbeteren. 
+        <button class="accept-btn" onclick="acceptCookies()">Accepteer</button>
+        <button class="decline-btn" onclick="declineCookies()">Weiger</button>
+    </div>
+
+
+</body>
+
+</html>
